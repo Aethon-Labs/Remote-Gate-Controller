@@ -1,0 +1,17 @@
+#### Raspberry Pi Gate Opener
+
+Python program that can open a commercial gate operator for a parking lot via a barcode scanner and text messages.
+
+We'll be using the Raspberry Pi 4 Model B as our platform, and for the gate operator, we'll use the LiftMaster CSL24U commercial slide gate operator, which has an RS-232 interface for control. For the GSM module, we'll use the SIM800L, which is a popular module that can send and receive text messages.
+
+Here are the steps:
+
+Set up the Raspberry Pi with the necessary software and hardware. You'll need a Raspberry Pi 4 Model B, a microSD card with Raspbian installed, a USB barcode scanner, an RS-232 to USB adapter to interface with the gate operator, and a SIM800L GSM module to send text messages. You'll also need to install the PySerial library for serial communication.
+
+Connect the USB barcode scanner to the Raspberry Pi.
+
+Connect the RS-232 to USB adapter to the Raspberry Pi and the gate operator. The CSL24U gate operator uses an RJ11 connector for RS-232 communication, so you'll need to use an RJ11 to DB9 adapter and a DB9 to USB adapter to connect it to the Raspberry Pi. Be sure to check the wiring diagram for the adapter to ensure that you wire it correctly.
+
+Connect the SIM800L GSM module to the Raspberry Pi. You'll need to connect the power, ground, TX, and RX pins of the module to the appropriate pins on the Raspberry Pi. Be sure to check the wiring diagram for the module to ensure that you wire it correctly.
+
+Configure the SIM800L GSM module to send and receive text messages. You'll need to insert a SIM card into the module, configure the module with the correct APN settings for your carrier, and test that you can send and receive text messages.
